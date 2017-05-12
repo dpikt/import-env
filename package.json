@@ -1,7 +1,10 @@
 {
   "name": "import-env",
   "version": "1.0.0",
-  "description": "Easily require and configure env variables.",
+  "engines": {
+    "node": "6.2.x"
+  },
+  "description": "Easily require and configure env variables in node.js",
   "main": "import-env.js",
   "scripts": {
     "test": "jest"
