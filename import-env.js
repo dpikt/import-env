@@ -20,6 +20,7 @@ const importEnv = (...keys) => {
       default: defaultValue,
       required,
     } = key
+    if (!exists(name)) throw 'load-env: must provide variable name'
     // Look up key in env
     const valueFromEnv = process.env[name]
     // Fall back to default value
