@@ -1,0 +1,25 @@
+{
+  "name": "import-env",
+  "version": "1.0.0",
+  "description": "Easily require and configure env variables.",
+  "main": "import-env.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "config",
+    "configuration",
+    "dotenv"
+  ],
+  "author": "dpikt",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "jest": "^20.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
