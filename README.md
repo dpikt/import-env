@@ -1,6 +1,8 @@
 # import-env
 *An easy way to require and configure env variables in Node.js*
 
+[![NPM version](https://img.shields.io/npm/v/import-env.svg?style=flat-square)](https://www.npmjs.com/package/import-env)
+
 This is a small helper module built on top of [dotenv](https://www.npmjs.com/package/dotenv) that allows you to load variables from a `.env` file and perform additional configuration, such as:
 - Setting default values for variables
 - Marking variables as required
