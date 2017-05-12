@@ -8,7 +8,7 @@ This is a small helper module built on top of [dotenv](https://www.npmjs.com/pac
 
 ## Basic example
 
-```
+```javascript
 // In config.js
 
 const importEnv = require('import-env')
@@ -44,7 +44,7 @@ GITHUB_USERNAME=my_username
 GITHUB_PASSWORD=my_password
 ```
 the above example would return an object that looks like this:
-```
+```javascript
 {
     PORT: 4444,                   
     USER: 'my_username',
@@ -61,7 +61,7 @@ For more information on using `.env` files, see the docs for [dotenv](https://ww
 - A configuration **object** containing the name of the variable and any additional options
 
 Example with both string and object arguments:
-```
+```javascript
 const config = importEnv('API_PRIVATE', 'API_PUBLIC', { name: 'PASSWORD', required: true })
 ```
 
@@ -87,7 +87,7 @@ The key will still be in the returned object, but its value will be `undefined`.
 
 This behavior can get complex as the order of operations may vary, so this function doesn't cover it. You can easily do it outside of the context of the function, though:
 
-```
+```javascript
 const config = importEnv('VALUE', 'DEFAULT_VALUE')
 if (!config.VALUE) config.VALUE = config.DEFAULT_VALUE
 module.exports = config
