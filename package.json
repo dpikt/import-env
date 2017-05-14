@@ -9,6 +9,10 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dpikt/import-env.git"
+  },
   "keywords": [
     "env",
     "environment",
